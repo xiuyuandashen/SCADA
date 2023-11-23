@@ -69,6 +69,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Base\GlobalMonitor.cs" />
+    <Compile Include="Base\ModbusNumericConversionExtension.cs" />
     <Compile Include="Base\MonitorValuesState.cs" />
     <Compile Include="Configuration\AutoMapperConfiguration.cs" />
     <Compile Include="Models\DataResult.cs" />

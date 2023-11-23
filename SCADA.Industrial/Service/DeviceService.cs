@@ -13,9 +13,9 @@ namespace SCADA.Industrial.Service
 {
     public class DeviceService : IDeviceService
     {
-        public DataResult<IList<DevicesDto>> GetAll()
+        public DataResult<List<DevicesDto>> GetAll()
         {
-            DataResult<IList<DevicesDto>> result = new DataResult<IList<DevicesDto>>();
+            DataResult<List<DevicesDto>> result = new DataResult<List<DevicesDto>>();
             try
             {
                 using (SCADAModels context = new SCADAModels())

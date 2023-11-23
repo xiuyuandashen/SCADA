@@ -123,12 +123,12 @@ namespace SCADA.Industrial.Models.Dto
 
 
 
-        private string currentValue;
+        private double currentValue;
 
         /// <summary>
         /// 当前值
         /// </summary>
-        public string CurrentValue
+        public double CurrentValue
         {
             get { return currentValue; }
             set 
@@ -139,7 +139,7 @@ namespace SCADA.Industrial.Models.Dto
                 {
                     // 监控异常信息
                     string msg = description;
-                    double val = Convert.ToDouble(CurrentValue);
+                    double val = CurrentValue;
                     // 监控值状态
                     MonitorValuesState state = MonitorValuesState.OK;
                     if (val < Convert.ToDouble(alarm_lolo))

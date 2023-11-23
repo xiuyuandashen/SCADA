@@ -8,11 +8,12 @@ namespace SCADA.Industrial.Models
 
     public partial class MonitorValues
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        
         public int d_id { get; set; }
 
         [StringLength(100)]
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public string value_id { get; set; }
 
         [StringLength(100)]

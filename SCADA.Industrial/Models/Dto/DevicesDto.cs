@@ -32,6 +32,8 @@ namespace SCADA.Industrial.Models.Dto
         /// </summary>
         public bool IsWaring { get; set; } = false;
 
+        public bool IsRunnig { get; set; } = false;
+
         public ObservableCollection<MonitorValuesDto> MonitorValuesList { get; set; }
 
 
