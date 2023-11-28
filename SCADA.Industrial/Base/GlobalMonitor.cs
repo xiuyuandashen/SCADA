@@ -133,7 +133,7 @@ namespace SCADA.Industrial.Base
                     switch (item.DATA_TYPE)
                     {
                         case "Float":
-                            // Float 寄存器一个地址占用16字节 Float占用2格
+                            // Float 寄存器一个地址占用2字节 Float占用4字节 
                             // Modbus RTU 从站返回报文 从站地址、功能码、字节计数、寄存器数据、CRC校验（已去除）
                             // 所以startByte要加3
                             startByte = 3 + item.ADDRESS * 2;
