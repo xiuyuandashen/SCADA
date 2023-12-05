@@ -45,15 +45,15 @@ namespace SCADA.Industrial.Service
                                 if (state != Base.MonitorValuesState.OK)
                                 {
                                     // 存在数据异常告警
-                                    deviceItem.IsWaring = true;
+                                    deviceItem.IsWarning = true;
 
                                     deviceItem.ErrorMessagesList.Add(new WarningMessageMode { ValueId = monitorValue.VALUE_ID, Message = msg });
                                 }
 
                                 bool exitsWarning = deviceItem.ErrorMessagesList.Count > 0;
-                                if (exitsWarning != deviceItem.IsWaring)
+                                if (exitsWarning != deviceItem.IsWarning)
                                 {
-                                    deviceItem.IsWaring = exitsWarning;
+                                    deviceItem.IsWarning = exitsWarning;
                                 }
                             };
 

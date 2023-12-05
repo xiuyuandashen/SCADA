@@ -1,4 +1,6 @@
-﻿using SCADA.Industrial.Base;
+﻿using LiveCharts;
+using LiveCharts.Defaults;
+using SCADA.Industrial.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -135,7 +137,7 @@ namespace SCADA.Industrial.Models.Dto
             {
                 currentValue = value;
                 // 如果监控阈值
-                if ("是".Equals(is_alarm))
+                if ("1".Equals(is_alarm))
                 {
                     // 监控异常信息
                     string msg = description;
@@ -163,11 +165,20 @@ namespace SCADA.Industrial.Models.Dto
                     }
                     // 传递告警信息回调
                     ValueStateChanged(state, msg + $",当前值:[{value}]");
+                   
                 }
-                OnPropertyChanged(); 
+                // 添加 liveCharts 绘图数据
+                Values.Add(new ObservableValue(value));
+                // 节点过多的话 去除 最多保留最新的60个节点
+                if (Values.Count > 60) Values.RemoveAt(0);
+                OnPropertyChanged();
+                
             }
         }
 
-
+        /// <summary>
+        /// LiveCharts 绘制图表
+        /// </summary>
+        public ChartValues<ObservableValue> Values { get; set; } = new ChartValues<ObservableValue>();  
     }
 }
