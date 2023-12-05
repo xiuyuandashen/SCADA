@@ -1,6 +1,0 @@
-F:\code\SCADA.Industrial\SCADA.Communication\bin\Debug\SCADA.Communication.dll
-F:\code\SCADA.Industrial\SCADA.Communication\bin\Debug\SCADA.Communication.pdb
-F:\code\SCADA.Industrial\SCADA.Communication\obj\Debug\SCADA.Communication.csproj.AssemblyReference.cache
-F:\code\SCADA.Industrial\SCADA.Communication\obj\Debug\SCADA.Communication.csproj.CoreCompileInputs.cache
-F:\code\SCADA.Industrial\SCADA.Communication\obj\Debug\SCADA.Communication.dll
-F:\code\SCADA.Industrial\SCADA.Communication\obj\Debug\SCADA.Communication.pdb
