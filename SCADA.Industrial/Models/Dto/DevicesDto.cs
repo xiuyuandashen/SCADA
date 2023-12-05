@@ -30,13 +30,27 @@ namespace SCADA.Industrial.Models.Dto
         /// <summary>
         /// 是否有告警
         /// </summary>
-        public bool IsWaring { get; set; } = false;
+        private bool _isWarning = false;
 
-        public bool IsRunnig { get; set; } = false;
+        public bool IsWarning
+        {
+            get { return _isWarning; }
+            set { _isWarning = value; OnPropertyChanged(); }
+        }
 
-        public ObservableCollection<MonitorValuesDto> MonitorValuesList { get; set; }
+
+        private bool _IsRunnig = false;
+
+        public bool IsRunnig
+        {
+            get { return _IsRunnig; }
+            set { _IsRunnig = value; OnPropertyChanged(); }
+        }
 
 
-        public ObservableCollection<WarningMessageMode> ErrorMessagesList { get; set; }
+        public ObservableCollection<MonitorValuesDto> MonitorValuesList { get; set; } = new ObservableCollection<MonitorValuesDto>();
+
+
+        public ObservableCollection<WarningMessageMode> ErrorMessagesList { get; set; } = new ObservableCollection<WarningMessageMode>();
     }
 }

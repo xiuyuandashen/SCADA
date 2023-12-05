@@ -56,6 +56,12 @@
     <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
     </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Xaml.Behaviors, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Xaml.Behaviors.Wpf.1.1.77\lib\net462\Microsoft.Xaml.Behaviors.dll</HintPath>
     </Reference>
@@ -65,6 +71,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
@@ -87,14 +94,17 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Base\GlobalMonitor.cs" />
+    <Compile Include="Base\LogType.cs" />
     <Compile Include="Base\ModbusNumericConversionExtension.cs" />
     <Compile Include="Base\MonitorValuesState.cs" />
     <Compile Include="Base\NotifyPropertyBase.cs" />
     <Compile Include="Configuration\AutoMapperConfiguration.cs" />
+    <Compile Include="Converts\IndexColorConvert.cs" />
     <Compile Include="Models\DataResult.cs" />
     <Compile Include="Models\Devices.cs" />
     <Compile Include="Models\Dto\BaseDto.cs" />
     <Compile Include="Models\Dto\DevicesDto.cs" />
+    <Compile Include="Models\Dto\LogModel.cs" />
     <Compile Include="Models\Dto\MonitorValuesDto.cs" />
     <Compile Include="Models\Dto\StorageAreaDto.cs" />
     <Compile Include="Base\GlobalConfiguration.cs" />

@@ -1,0 +1,13 @@
+F:\code\SCADA.Industrial\SCADA.Controls\bin\Debug\SCADA.Controls.dll
+F:\code\SCADA.Industrial\SCADA.Controls\bin\Debug\SCADA.Controls.pdb
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\SCADA.Controls.csproj.AssemblyReference.cache
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\CircularProgressBar.g.cs
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\SCADA.Controls_MarkupCompile.cache
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\SCADA.Controls_MarkupCompile.lref
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\CircularProgressBar.baml
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\SCADA.Controls.g.resources
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\SCADA.Controls.Properties.Resources.resources
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\SCADA.Controls.csproj.GenerateResource.cache
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\SCADA.Controls.csproj.CoreCompileInputs.cache
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\SCADA.Controls.dll
+F:\code\SCADA.Industrial\SCADA.Controls\obj\Debug\SCADA.Controls.pdb
